@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cooking Mamas</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style5.css">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link href="https://fonts.google.com/specimen/Dancing+Script?classification=Handwriting" rel="stylesheet">
 </head>
@@ -28,25 +28,26 @@
             <span class="nav"><a href="layout3.html">Rezepte</a></span>
             <span class="nav"><a href="layout5.html">Formular</a></span>
         </div>
-        <div class="sidebar-title">
-            <span class="side-title">Nächstes Event</span>
-        </div>
+
+
         <div class="content">
-            <b class="content-title">Über uns</b>
-            <p id="content-text">Wir, die Cooking Mamas, sind eine bunte Gemeinschaft von Menschen, die die Freude am Kochen verbindet. Egal, ob Anfänger oder Kochprofi, 
-                bei uns steht der Spaß am gemeinsamen Ausprobieren, Entdecken und Genießen im Mittelpunkt. Wir teilen unsere Lieblingsrezepte, 
-                tauschen Tipps und Tricks aus und unterstützen uns gegenseitig dabei, Neues zu lernen und kreative Gerichte zu zaubern.</p>
-            <p id="content-text">Gemeinsam wollen wir die Vielfalt der Küche erleben und genießen – denn Kochen bringt uns zusammen!</p>
-            <img src="kochchef.jpg">
-        </div>
-        <div class="sidebar">
-            <div><img src="pizza_Event.jpg"></div>
-            <span>Lust auf einen kreativen Abend?</span>
-            <br>
-            <span>Melde dich</span>
-            <span>hier</span>
-            <span>für unseren Pizzakurs im Kochverein an. Lerne Pizza wie ein Meister zu machen. </span>
-            <p>Egal ob Anfänger oder Hobbykoch - jeder ist willkommen.</p>
+            <b class="content-title">Willkommen bei Cooking Mamas</b>
+            <p>
+                <p id="content-text">Du willst ein Teil von unserem Team werden? oder einfach an einem Event teilnehmen? 
+                    Dann bist du hier genau richtig
+                </p>
+                <form action="https://formlog.offline.ch/log" method="POST" class="formular"></form>
+                    <label>Name</label>
+                    <input type="text" name="name" required>
+                    <br>
+                    <label>E-Mail</label>
+                    <input type="email" name="email" required>
+                    <br>
+                    <label>Handynummer</label>
+                    <input type="number" name="nummer">
+                    <label>Beitreten oder Eventteilnahme?</label>
+                    <select name="was"></select>
+            </p>
         </div>
 
         <div class="footer">

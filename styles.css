@@ -47,11 +47,13 @@ body, html {
     align-items: center;
     justify-content: space-evenly;
     color: black;
-    a:link {
-        text-decoration: none;
-        color: black;
-    } 
+
 }
+
+.container a:link {
+    text-decoration: none;
+    color: black;
+} 
 
 .content {
     grid-area: content;
@@ -80,6 +82,10 @@ body, html {
     width: 100%;
     max-width: 99%;
     padding-left: 1%;;
+}
+
+#content-text {
+    font-size: 18px;
 }
 
 .sidebar {
@@ -131,6 +137,10 @@ body, html {
 .side-title {
     font-family: Abel;
     font-size: 20px;
+}
+
+#sidelink {
+    color: rgb(255, 0, 0);
 }
 
 .footer {
