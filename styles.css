@@ -1,0 +1,121 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Abel, serif;
+}
+
+/* Container for the entire grid layout */
+.container {
+    display: grid; /* Aktiviert das Grid-Layout */
+    max-width: 100%;
+    min-height: 100vh;
+    grid-template-columns: 40% 35% 25%; /* Spaltenaufteilung */
+    grid-template-rows: 100px 50px 30px auto 80px; /* Reihenaufteilung */
+    grid-template-areas: 
+        "header header header"
+        "navigation navigation navigation"
+        "content content sidebar-title"
+        "content content sidebar"
+        "footer footer footer"; /* Layout-Definition */
+}
+
+/* Individual Grid Items */
+.header {
+    grid-area: header; /* Platzierung im Grid */
+    background-color: #5b976e;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: 1px solid #5b976e;
+}
+
+.header-title {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.navigation {
+    grid-area: navigation;
+    background-color: #c6dbcc;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+    a:link {
+        text-decoration: none;
+        color: black;
+    } 
+}
+
+.content {
+    grid-area: content;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    width: 93.5%;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    border: 1px solid black;
+    object-fit: contain;
+    border-top: none;
+    text-align: left;
+    padding: 10px;
+}
+
+.side-title {
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.sidebar img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.sidebar p {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.sidebar-title {
+    grid-area: sidebar-title;
+    border-bottom: none;
+    background-color: #f4f4f4;
+    text-align: center;
+    align-self: center;
+}
+
+.side-title {
+    font-family: Abel;
+    font-size: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #5b976e;
+    color: #3d3d3d;
+    position: relative; 
+    display: flex;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+}
