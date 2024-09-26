@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -6,7 +6,6 @@ body, html {
     font-family: Abel, serif;
 }
 
-/* Container for the entire grid layout */
 .container {
     display: grid; /* Aktiviert das Grid-Layout */
     max-width: 100%;
@@ -37,8 +36,8 @@ body, html {
 }
 
 .slogan {
-    margin-left: 50vh;
-    font-family: Dancing Script, serif;
+    font-family: Dancing Script;
+    margin-left: 40vh;
 }
 
 .navigation {
@@ -58,10 +57,29 @@ body, html {
     grid-area: content;
     background-color: #f4f4f4;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
+    flex-direction: column; 
+    align-items: center; 
     border-top: none;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    border-right: 1px solid black;
+}
+
+.content-title {
+    font-size: 50px;
+    justify-content: center;
+}
+
+.content p {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    max-width: 99%;
+    padding-left: 1%;;
 }
 
 .sidebar {
@@ -75,7 +93,8 @@ body, html {
     border-top: none;
     text-align: left;
     padding: 10px;
-    border-left: none;
+    border-right: none;
+    border-bottom: none;
 }
 
 .side-title {
@@ -97,7 +116,7 @@ body, html {
 
 .sidebar p {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
 }
 
@@ -127,8 +146,10 @@ body, html {
     align-items: center;
 }
 
-@media (max-width: px) {
-    
+@media (min-width: 1200px) {
+    .body {
+        font-size: calc(+ 10px);
+    }
 }
 
 @media (max-width: 800px) {
