@@ -36,7 +36,7 @@
                 <p id="content-text">Du willst ein Teil von unserem Team werden? oder einfach an einem Event teilnehmen? 
                     Dann bist du hier genau richtig
                 </p>
-                <form action="https://formlog.offline.ch/log" method="POST" class="formular"></form>
+                <form action="https://formlog.offline.ch/log" method="POST" class="formular">
                     <label>Name</label>
                     <input type="text" name="name" required>
                     <br>
@@ -44,9 +44,28 @@
                     <input type="email" name="email" required>
                     <br>
                     <label>Handynummer</label>
-                    <input type="number" name="nummer">
+                    <input type="tel" name="nummer">
                     <label>Beitreten oder Eventteilnahme?</label>
-                    <select name="was"></select>
+                    <select name="was" required>
+                        <option value="chose"></option>
+                        <option value="join">Beitreten</option>
+                        <option value="event">Eventteilnahme</option>
+                    </select>
+                    <label>Alter</label>
+                    <label id="radio">
+                        <input type="radio" name="age" value=">18">Unter 18
+                        <input type="radio" name="age" value="18-30">18 bis 30
+                        <input type="radio" name="age" value="31-60">31 bis 60
+                        <input type="radio" name="age" value="+60">60+
+                    </label>
+                    <p></p>
+                    <label>Bemerkung</label>
+                    <textarea name="bemerkung">
+                    </textarea>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </form>
+
             </p>
         </div>
 
