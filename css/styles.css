@@ -4,7 +4,7 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     font-family: Abel, serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .container {
@@ -130,12 +130,6 @@ body, html {
     margin: 0 auto;
 }
 
-.sidebar p {
-    margin-top: 10px;
-    font-size: 16px;
-    text-align: left;
-}
-
 .sidebar-title {
     grid-area: sidebar-title;
     border-bottom: none;
@@ -217,23 +211,34 @@ body, html {
 @media (max-width: 600px) {
     .container {
         grid-template-columns: auto;
-        grid-template-rows: 100px 50px auto 60px;
+        grid-template-rows: 100px 50px auto 60px 150px 70px;
 
         grid-template-areas: 
         "header"
         "navigation"
         "content"
+        "sidebar-title"
+        "sidebar"
         "footer";
         width: 100vh;
         height: 100vh;
     }
 
     .sidebar {
-        display: none;
+        display: flex;
+        flex-direction: row;
+        .hidden {
+            display: none;
+        }
+    }
+
+    .sidebar-text {
+        font-size: 19px;
     }
 
     .side-title {
-        display: none;
+        display: flex;
+        flex-direction: row;
     }
 
     .header-title {
