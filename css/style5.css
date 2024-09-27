@@ -5,6 +5,7 @@ body, html {
     box-sizing: border-box;
     font-family: Abel, serif;
     font-size: 18px;
+    color: black;
 }
 
 .container {
@@ -91,7 +92,6 @@ body, html {
 .footer {
     grid-area: footer;
     background-color: #5b976e;
-    color: #3d3d3d;
     position: relative; 
     display: flex;
     border: none;
@@ -99,6 +99,10 @@ body, html {
     justify-content: center;
     list-style-type: none;
     align-items: center;
+}
+
+.foot-text {
+    color: rgb(0, 0, 0);
 }
 
 input[type=text] {

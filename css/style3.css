@@ -5,6 +5,7 @@ body, html {
     box-sizing: border-box;
     font-family: Abel, serif;
     font-size: 18px;
+    color: black;
 }
 
 .container {
@@ -192,7 +193,7 @@ body, html {
         "navigation"
         "content"
         "footer";
-        width: 100vh;
+        width: 100vw;
         height: 100vh;
     }
     .sidebar {
@@ -225,7 +226,7 @@ body, html {
         "sidebar-title"
         "sidebar"
         "footer";
-        width: 100%;
+        width: 100vw;
         height: 100vh;
     }
 
@@ -293,7 +294,12 @@ body, html {
         "sidebar"
         "footer";
         max-width: 450px;
-        width: 100vh;
+        width: 100vw;
         height: 100vh;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
