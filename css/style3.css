@@ -218,28 +218,47 @@ body, html {
         grid-template-columns: auto;
         grid-template-rows: 100px 50px auto 60px 150px 70px;
 
-        grid-template-areas: 
+        grid-template-areas:
         "header"
         "navigation"
         "content"
         "sidebar-title"
         "sidebar"
         "footer";
-        width: 100vh;
+        width: 100%;
         height: 100vh;
     }
 
     .logo {
-        margin-left: -9%;
+        margin-left: -5%;
     }
 
     .header-title {
         margin-left: -5%;
     }
 
+    .rezept-title {
+        align-self: center;
+    }
+
+    .bild {
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .content {
+        border-right: none;
+        justify-content: left;
+        align-items: flex-start;
+        align-self: flex-start;
+
+    }
+
     .sidebar {
         display: flex;
         flex-direction: row;
+        border-left: none;
         .hidden {
             display: none;
         }

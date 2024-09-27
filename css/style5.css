@@ -221,6 +221,14 @@ input[type=button], [type=submit], [type=reset] {
         height: 100vh;
     }
 
+    .logo {
+        margin-left: -9%;
+    }
+
+    .header-title {
+        margin-left: -5%;
+    }
+
     .sidebar {
         display: none;
     }
