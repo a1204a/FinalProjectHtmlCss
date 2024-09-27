@@ -37,7 +37,6 @@ body, html {
 }
 
 .slogan {
-    font-family: Dancing Script;
     margin-left: 40vh;
 }
 
@@ -229,7 +228,12 @@ input[type=button], [type=submit], [type=reset] {
         margin-left: -5%;
     }
 
+    .content {
+        border: none;
+    }
+
     .sidebar {
+        border: none;
         display: none;
     }
 
