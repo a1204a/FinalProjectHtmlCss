@@ -165,6 +165,17 @@ input[type=button], [type=submit], [type=reset] {
     }
 }
 
+@media (max-width: 1200px) {
+    .header-title {
+        font-size: 35px;
+    }
+
+    .slogan {
+        font-size: 16px;
+        margin-left: 25vh;
+    }
+}
+
 @media (max-width: 800px) {
     .container {
         grid-template-columns: auto;
@@ -186,22 +197,14 @@ input[type=button], [type=submit], [type=reset] {
         display: none;
     }
 
-    .header {
-        min-width: 100vh;
-        max-width: 100vh;
+    .header-title {
+        font-size: 24px;
     }
 
-    .content {
-        min-height: 100vh;
+    .slogan {
+        font-size: 16px;
+        margin-left: 20vh;
     }
-
-    .footer {
-        width: 100%;
-        position: relative;
-        height: 120px;
-    }
-
-
 }
 
 @media (max-width: 600px) {
@@ -226,18 +229,12 @@ input[type=button], [type=submit], [type=reset] {
         display: none;
     }
 
-    .header {
-        min-width: 100vh;
-        max-width: 100vh;
+    .header-title {
+        font-size: 20px;
     }
 
-    .content {
-        min-height: 100vh;
-    }
-
-    .footer {
-        width: 100%;
-        position: relative;
-        height: 60px;
+    .slogan {
+        font-size: 16px;
+        margin-left: 8vh;
     }
 }
